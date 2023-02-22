@@ -122,7 +122,7 @@ console.log(markHigherBMI2);
 //###############################################
 
 // ##### 17. String Template Literals #####
-
+/*
 const firstName = 'Jonas';
 const job = 'teacher';
 const birthYear = 1991;
@@ -140,3 +140,46 @@ lines');
 console.log(`String with
 multiple
 line`);
+
+// ##### 18. Taking Decisions #####
+
+const age = 15;
+
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗')
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years 😉`);
+}
+
+const birthYear = 2002;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
+
+// ########## CODING CHALLENGE #2 ##########
+
+// const markMass = 78;
+// const markHeight = 1.69;
+// const johnMass = 92;
+// const johnHeight = 1.95;
+
+const markMass = 95;
+const markHeight = 1.88;
+const johnMass = 85;
+const johnHeight = 1.76;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
+}
