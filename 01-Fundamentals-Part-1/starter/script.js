@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 
@@ -10,6 +11,7 @@ console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 
+// Varible names conventions
 let jonas_matilda = "JM";
 let $function = 27;
 
@@ -23,3 +25,4 @@ let job1 = "Programmer";  //Do not use varibles name like that
 let job2 = "Teacher";
 
 console.log(myFirstJob);
+*/
