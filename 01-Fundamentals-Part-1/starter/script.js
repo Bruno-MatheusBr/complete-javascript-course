@@ -58,7 +58,32 @@ job = 'teacher';  // Var works some way like Let. It can be redeclared
 lastName = 'Domingues'; // Declaring a varible is not mandatory, but never do that.
 console.log(lastName);
 console.log(typeof lastName);
-*/
 
 // ##### 14. BASIC OPERATORS #####
+
+// ***** Math operators *****
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2020;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 2, 2 ** 3);
+
+const firstName = 'Bruno';
+const lastName = 'Domingues';
+console.log(firstName + ' ' + lastName);
+
+// ***** assignment operators *****
+let x = 10 + 5;
+x += 10;
+x *= 4;
+x++;
+x--;
+x--;
+console.log(x);
+
+// ***** Comparison operators *****
+console.log(ageJonas > ageSarah);  // Return true or false
+console.log(ageSarah >= 18);
+*/
 
