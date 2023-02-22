@@ -87,3 +87,37 @@ console.log(ageJonas > ageSarah);  // Return true or false
 console.log(ageSarah >= 18);
 */
 
+// ########## Coding Challenge #1 ##########
+
+// Data 01
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI);
+console.log(johnBMI);
+console.log(markHigherBMI);
+
+// Data 02
+const markMass2 = 95;
+const markHeight2 = 1.88;
+const johnMass2 = 85;
+const johnHeight2 = 1.76;
+
+const markBMI2 = markMass2 / markHeight2 ** 2;
+const johnBMI2 = johnMass2 / johnHeight2 ** 2;
+
+const markHigherBMI2 = markBMI2 > johnBMI2;
+
+console.log(markBMI2);
+console.log(johnBMI2);
+console.log(markHigherBMI2);
+
+//###############################################
+
