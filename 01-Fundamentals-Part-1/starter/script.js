@@ -187,4 +187,15 @@ console.log(century);
 
 // ##### 20. Type Conversion and Coersion #####
 
+// Type conversion
 const inputYear = '1991';
+console.log(Number(inputYear), inputYear);  //Need to start with a capital letter
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));  //Returns NaN
+console.log(typeof NaN);  // NaN is a kind of number, but an invalid one
+
+console.log(String(23), 23);
+
+// Type coercion
