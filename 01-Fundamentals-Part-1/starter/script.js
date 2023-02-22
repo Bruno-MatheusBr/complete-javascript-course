@@ -88,7 +88,7 @@ console.log(ageSarah >= 18);
 */
 
 // ########## Coding Challenge #1 ##########
-
+/*
 // Data 01
 const markMass = 78;
 const markHeight = 1.69;
@@ -118,6 +118,25 @@ const markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markBMI2);
 console.log(johnBMI2);
 console.log(markHigherBMI2);
-
+*/
 //###############################################
 
+// ##### 17. String Template Literals #####
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(jonasNew);
+
+// Strings with multple lines
+// old way
+console.log('String with \n\
+multiple \n\
+lines');
+// new way
+console.log(`String with
+multiple
+line`);
