@@ -240,14 +240,18 @@ console.log(n);
 // if (age === 18) console.log('You just became an adult :D (Strict)');
 // if (age == 18) console.log('You just became an adult :D (Loose)');
 
-const favourite = prompt('What is your favourite number?');
-console.log(favourite);
+// const favourite = prompt('What is your favourite number?');
+// console.log(favourite);
 
-if (favourite != 23) {
-    console.log('Seu número não é 23!');
-} else {
-    console.log('Seu número é 23!');
-}
+// if (favourite != 23) {
+//     console.log('Seu número não é 23!');
+// } else {
+//     console.log('Seu número é 23!');
+// }
 
 // ##### 23. Boolean Logic #####
+
+// Nothing to do here.
+
+// ##### 24. Logical Operators #####
 
