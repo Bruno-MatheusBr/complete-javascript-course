@@ -212,3 +212,26 @@ console.log(n);
 
 // ##### 21. Truthy and Falsy Values
 
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean('Jonas'));
+// console.log(Boolean({}));
+// console.log(Boolean(''));
+
+// // Testing
+
+// const money = 1  // Zero is falsy
+// if (money) {
+//     console.log('Do not spend it all ;)');
+// } else {
+//     console.log('You nedd to get a job!');
+// }
+
+// let heigt;
+// if (heigt) {
+//     console.log('YAY! Height is defined!');
+// } else {
+//     console.log('Height is not defined');
+// }
+
+// ##### 22. Equality operators: == vs === #####

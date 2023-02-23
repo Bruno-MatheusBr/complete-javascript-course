@@ -9,3 +9,7 @@
 # Type Coercion
 * Plus sign changes numbers into a string
 * -, * and / will change strings into a number
+
+# Truthy and Falsy
+* 5 falsy values: 0, '', undefined, null, NaN
+* All others values is considered true (empty object is true as well)
