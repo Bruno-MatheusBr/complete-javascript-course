@@ -184,7 +184,7 @@ console.log(century);
 //     console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`);
 // }
 // ###############################################################################
-
+/*
 // ##### 20. Type Conversion and Coersion #####
 
 // Type conversion
@@ -199,3 +199,16 @@ console.log(typeof NaN);  // NaN is a kind of number, but an invalid one
 console.log(String(23), 23);
 
 // Type coercion
+console.log('I am ' + 23 + ' years old');  // Plus sign changes numbers into a string
+console.log('23' - '10' - 3);
+console.log('23' + '10' + 3);
+console.log('23' * '2');
+console.log('23' / '2');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+*/
+
+// ##### 21. Truthy and Falsy Values
+
