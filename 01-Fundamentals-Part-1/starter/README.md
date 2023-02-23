@@ -13,3 +13,8 @@
 # Truthy and Falsy
 * 5 falsy values: 0, '', undefined, null, NaN
 * All others values is considered true (empty object is true as well)
+
+# Equality operators
+* == is a loose operator that makes coercion when it is used
+* === is a strict operator that do not accept coercion
+* != is loose and !== is strict
