@@ -343,4 +343,33 @@ console.log(n);
 // }
 
 // ##### 27. Statements and Expressions #####
+// ##### Nothing to do here #####
 
+// ##### 28. The Conditional Ternary Operator #####
+
+// const age = 18;
+// // age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+
+// const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+// console.log(drink);
+
+// console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
+
+// MDN Reference ---
+// function getFee(isMember) {
+//     return (isMember ? '$2.00' : '$10.00');
+//   }
+  
+//   console.log(getFee(true));
+//   // Expected output: "$2.00"
+  
+//   console.log(getFee(false));
+//   // Expected output: "$10.00"
+  
+//   console.log(getFee(null));
+//   // Expected output: "$10.00"
+  // MDN Reference end ---
+
+  // ########## CODING CHALLENGE 04 ##########
+
+  
