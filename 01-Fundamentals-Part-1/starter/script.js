@@ -255,3 +255,18 @@ console.log(n);
 
 // ##### 24. Logical Operators #####
 
+const hasDriverLicense = true;
+const hasGoodVision = true;
+const isTired = false;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+const canDrive = hasDriverLicense && hasGoodVision && !isTired;
+
+if (canDrive) {
+    console.log('Sarah can drive 🎉🚗');
+} else {
+    console.log('Someone else should drive 😢');
+}
