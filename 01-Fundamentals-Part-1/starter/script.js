@@ -372,4 +372,15 @@ console.log(n);
 
   // ########## CODING CHALLENGE 04 ##########
 
-  
+// const bill = Number(prompt('Type the bill!'));
+
+// const tip = bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2;
+
+// const totalBill = bill + tip;
+
+// console.log(bill);
+// console.log(tip);
+// console.log(`The total bill is ${totalBill}!`);
+// ######################################################
+
+// ***************************** END ***************************
