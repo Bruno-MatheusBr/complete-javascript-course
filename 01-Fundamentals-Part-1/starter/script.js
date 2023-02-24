@@ -255,18 +255,44 @@ console.log(n);
 
 // ##### 24. Logical Operators #####
 
-const hasDriverLicense = true;
-const hasGoodVision = true;
-const isTired = false;
+// const hasDriverLicense = true;
+// const hasGoodVision = true;
+// const isTired = false;
 
-console.log(hasDriverLicense && hasGoodVision);
-console.log(hasDriverLicense || hasGoodVision);
-console.log(!hasDriverLicense);
+// console.log(hasDriverLicense && hasGoodVision);
+// console.log(hasDriverLicense || hasGoodVision);
+// console.log(!hasDriverLicense);
 
-const canDrive = hasDriverLicense && hasGoodVision && !isTired;
+// const canDrive = hasDriverLicense && hasGoodVision && !isTired;
 
-if (canDrive) {
-    console.log('Sarah can drive 🎉🚗');
-} else {
-    console.log('Someone else should drive 😢');
-}
+// if (canDrive) {
+//     console.log('Sarah can drive 🎉🚗');
+// } else {
+//     console.log('Someone else should drive 😢');
+// }
+
+// ########## CODING CHALLENGE #3 ##########
+
+// const dolphinScore = (97 + 112 + 101) / 3;
+// const koalasScore = (109 + 95 + 106) / 3;
+
+// console.log(`Dolphins = ${dolphinScore}`);
+// console.log(`Koalas = ${koalasScore}`);
+
+// if (dolphinScore > koalasScore) {
+//     console.log('Dolphins is the winner!');
+// } else if (dolphinScore == koalasScore) {
+//     console.log('We got a draw!! Both wins!');
+// } else {
+//     console.log('Koalas is the winner!')
+// }
+
+// if (dolphinScore >= 100 && dolphinScore > koalasScore) {
+//     console.log('Dolphins wins!');
+// } else if ( koalasScore >= 100 && koalasScore > dolphinScore) {
+//     console.log('Koalas wins!');
+// } else if (dolphinScore >= 100 && koalasScore >= 100 && dolphinScore == koalasScore) {
+//     console.log('We got a draw!');
+// } else {
+//     console.log('No one socred more than 100 point. Both loose.');
+// }
