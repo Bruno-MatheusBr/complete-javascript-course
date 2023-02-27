@@ -35,11 +35,21 @@
 // const appleOrangeJuice = fruitProcessor(2, 4);
 // console.log(appleOrangeJuice);
 
-// ###### Function Declaration vs Expressions ######
+// ###### 34. Function Declaration vs Expressions ######
 
-function calcAge(birthyear) {
-    return 2023 - birthyear;
-}
+// function calcAge(birthyear) {
+//     return 2023 - birthyear;
+// }
 
-const age1 = calcAge(Number(prompt('Type your birth year!')));
-console.log(`You are ${age1} year old 😊`);
+// const age1 = calcAge(Number(prompt('Type your birth year!')));
+// console.log(`You are ${age1} year old 😊`);
+
+// const calcAge2 = function(birthyear) {
+//     return 2023 - birthyear;
+// }
+
+// const age2 = calcAge2(1991);
+// console.log(age2);
+
+// ###### 35. Arrow Functions ######
+
