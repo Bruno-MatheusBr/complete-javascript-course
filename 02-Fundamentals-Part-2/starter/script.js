@@ -40,16 +40,39 @@
 // function calcAge(birthyear) {
 //     return 2023 - birthyear;
 // }
-
 // const age1 = calcAge(Number(prompt('Type your birth year!')));
 // console.log(`You are ${age1} year old 😊`);
+
 
 // const calcAge2 = function(birthyear) {
 //     return 2023 - birthyear;
 // }
-
 // const age2 = calcAge2(1991);
 // console.log(age2);
 
 // ###### 35. Arrow Functions ######
+
+// const calcAge3 = birthYear => 2023 - birthYear;
+// const age3 = calcAge3(Number(prompt('Type your birth year:')));
+// console.log(age3);
+
+// function calcAge4(birthYear) {
+//     return 2023 - birthYear;
+// }
+
+// const age4 = calcAge4(Number(prompt('Type your birth year:')));
+// console.log(age4)
+
+
+function retirementCalc(birthYear) {
+    const age = 2023 - birthYear;
+    const retirement = 65 - age;
+    return `You are ${age} years old and you have ${retirement} years left for your retirement.`;
+}
+const userRetirement = retirementCalc(Number(prompt('Type your birth year for the retirement calc:')))
+// const userBirthYear = Number(prompt('Type your birth year for the retirement calc:'))
+// const yearsForRetirement = retirementCalc(userBirthYear);
+// const userAge = 2023 - userBirthYear
+console.log(userRetirement);
+
 
