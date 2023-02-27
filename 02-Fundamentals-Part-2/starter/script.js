@@ -13,24 +13,33 @@
 
 //  ###### 33. Functions ######
 
-function logger() {
-    console.log('My name is Bruno!');
+// function logger() {
+//     console.log('My name is Bruno!');
+// }
+
+// // calling / running / invoking the function
+// logger();
+// logger();
+// logger();
+
+// function fruitProcessor(apples, oranges) {
+//     // console.log(apples,oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice;
+// }
+
+// const appleJuice = fruitProcessor(5, 0); // To get the function return, it needs to storage the parameters in a varible
+// console.log(appleJuice); // Than call the varible to get the function return
+// console.log(fruitProcessor(5, 0)); // Or just use console.log without storage in a varible
+
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+// ###### Function Declaration vs Expressions ######
+
+function calcAge(birthyear) {
+    return 2023 - birthyear;
 }
 
-// calling / running / invoking the function
-logger();
-logger();
-logger();
-
-function fruitProcessor(apples, oranges) {
-    // console.log(apples,oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice;
-}
-
-const appleJuice = fruitProcessor(5, 0); // To get the function return, it needs to storage the parameters in a varible
-console.log(appleJuice); // Than call the varible to get the function return
-console.log(fruitProcessor(5, 0)); // Or just use console.log without storage in a varible
-
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+const age1 = calcAge(Number(prompt('Type your birth year!')));
+console.log(`You are ${age1} year old 😊`);
