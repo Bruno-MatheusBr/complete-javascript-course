@@ -63,16 +63,26 @@
 // const age4 = calcAge4(Number(prompt('Type your birth year:')));
 // console.log(age4)
 
+// RETIREMENT FUNCTION - PERSONAL ######################################
+// function retirementCalc(birthYear) {
+//     const age = 2023 - birthYear;
+//     const retirement = 65 - age;
+//     return `You are ${age} years old and you have ${retirement} years left for your retirement.`;
+// }
+// const userRetirement = retirementCalc(Number(prompt('Type your birth year for the retirement calc:')))
 
-function retirementCalc(birthYear) {
-    const age = 2023 - birthYear;
-    const retirement = 65 - age;
-    return `You are ${age} years old and you have ${retirement} years left for your retirement.`;
-}
-const userRetirement = retirementCalc(Number(prompt('Type your birth year for the retirement calc:')))
-// const userBirthYear = Number(prompt('Type your birth year for the retirement calc:'))
-// const yearsForRetirement = retirementCalc(userBirthYear);
-// const userAge = 2023 - userBirthYear
-console.log(userRetirement);
+// console.log(userRetirement);
+// #######################################
 
+// RETIREMENT WITH ARROW FUNCTION 
+
+// const yearsToRetirement = (birthyear, firstname) => {
+//     const age5 = 2023 - birthyear;
+//     const retirement = 65 - age5;
+//     return `Mr. ${firstname} there are ${retirement} years to your retirement!`
+// }
+
+// console.log(yearsToRetirement(1985, 'Bruno'));  
+
+// ###### 36. Functions Calling others Functions ######
 
