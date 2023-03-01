@@ -86,3 +86,18 @@
 
 // ###### 36. Functions Calling others Functions ######
 
+// function cutFruitPieces(fruit) {
+//     return fruit * 3;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangepieces = cutFruitPieces(oranges);
+//     return `A juice with ${applePieces} pieces of apple and ${orangepieces} pieces of orange.`
+// }
+
+// const juice = fruitProcessor(2,3);
+// console.log(juice);
+
+// ###### 37. Reviewing Functions ######
+
