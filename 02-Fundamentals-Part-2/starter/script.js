@@ -101,3 +101,24 @@
 
 // ###### 37. Reviewing Functions ######
 
+// function calcAge(birthYear) {
+//     return 2023 - birthYear;
+// }
+
+// function yearsUntilRetirement(birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
+
+//     if (retirement > 0) {
+//         return `${firstName} there are ${retirement} years left for your retirement.`;
+//     } else {
+//         const alreadyRetired = retirement * -1
+//         return `${firstName}, you have been retired for ${alreadyRetired} years.`;
+//     }
+// }
+
+// console.log(yearsUntilRetirement(1985, "Bruno"));
+// console.log(yearsUntilRetirement(1950, "Gustavo"));
+
+// ########## 38. CODING CHALLENGE #1 ##########
+
