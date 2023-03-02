@@ -122,3 +122,26 @@
 
 // ########## 38. CODING CHALLENGE #1 ##########
 
+// function calcAverage(score1, score2, score3) {
+//     const average = (score1 + score2 + score3) / 3;
+//     return average;
+// }
+
+// const scoreDolphins = calcAverage(85, 54, 41);
+// const scoregeKoalas = calcAverage(23, 34, 27);
+// // console.log(averaDolphins, averageKoalas);
+
+// function checkWinner(averaDolphins, averageKoalas) {
+//     if (averaDolphins >= averageKoalas * 2 ) {
+//         return `Dolphins wins!`;
+//     } else if (averageKoalas >= averaDolphins * 2) {
+//         return `Koalas wins!`;
+//     } else {
+//         return `No one wins!`
+//     }
+// }
+
+// console.log(checkWinner(scoreDolphins, scoregeKoalas));
+
+// ###### 39. Introduction to Arrays ######
+
