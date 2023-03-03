@@ -145,3 +145,41 @@
 
 // ###### 39. Introduction to Arrays ######
 
+// const friends = ['Michael', 'Steven', 'Peter', 'Bruno'];
+// console.log(friends);
+
+// const years = new Array(1985, 1991, 1984, 2008, 2020);
+// console.log(years);
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = "Pedro";
+// console.log(friends);
+// // friends = ['Bob', 'Alice']  // That is not alowed
+
+// const firstname = 'Bruno';
+// const bruno = [firstname, 'Matheus', 2023-1985, 'Penal Police', friends];
+// console.log(bruno);
+// console.log(bruno.length);
+
+// //  Exercise
+
+// function calcAge(birthYear) {
+//     return 2023 - birthYear;
+// }
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+// console.log(ages);
+
+// ###### 40. Basic Arrays Operations (Methods) ######
+
