@@ -183,3 +183,48 @@
 
 // ###### 40. Basic Arrays Operations (Methods) ######
 
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements
+const newLength = friends.push('Jay'); // Push add element at the end
+console.log(friends);
+console.log(newLength); // Return the new length
+
+friends.unshift('John'); // Add element at the begining
+console.log(friends);
+
+// Remove elements
+friends.pop(); // Remove last
+console.log(friends);
+
+const popped = friends.pop();
+console.log(popped);// Return the element popped
+console.log(friends);
+
+friends.shift(); // Remove first
+console.log(friends);
+
+// Returning the index of a element
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob')); // Returns -1 when the element does not exist
+
+// Show if an element exists in the array
+console.log(friends.includes('Steven')); // Returns true
+console.log(friends.includes('Bob')); // Returns false
+
+friends.push(23);
+console.log(friends.includes('23')); // Returns false because there is no conversion
+console.log(friends);
+
+// Testing includes method
+friends.unshift('Peter');
+if (friends.includes('Peter')) {
+    console.log('You have a friend named Peter.')
+} else {
+    console.log("You don't have a friend named Peter")
+}
+
+
+// ############ 41. CODING CHALLENGE 02 ############
+
