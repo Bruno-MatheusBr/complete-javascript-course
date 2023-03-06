@@ -354,3 +354,48 @@
 
 // ############ 47. Looping Arrays, Breaking and Continuing ############
 
+// const bruno = [
+//     'Bruno',
+//     'Domingues',
+//     2023 - 1985,
+//     'Developer',
+//     ['Michael', 'Peter', 'Steven'],
+//     true
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < bruno.length; i++) {
+//     // console.log(bruno[i]);
+
+//     // types[i] = typeof bruno[i];
+//     types.push(typeof bruno[i]);
+// }
+
+// console.log(types);
+
+// const years = [1981, 1983, 1985, 1990];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2023 - years[i]);
+// }
+// console.log(ages);
+
+// // Continue and Break
+// console.log('--- Only Strings ---');
+
+// for (let i = 0; i < bruno.length; i++) {
+//     if (typeof bruno[i] !== 'string') continue;  // Continue means to jump
+//     console.log(bruno[i], typeof bruno[i]);
+// }
+
+// console.log('--- Break on Number ---');
+
+// for (let i = 0; i < bruno.length; i++) {
+//     if (typeof bruno[i] === 'number') break;
+//     console.log(bruno[i], typeof bruno[i]);
+// }
+
+// ############ 48. Looping Backwards and Loops in Loops ############
+
