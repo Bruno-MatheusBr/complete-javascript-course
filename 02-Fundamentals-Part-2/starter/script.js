@@ -183,48 +183,65 @@
 
 // ###### 40. Basic Arrays Operations (Methods) ######
 
-const friends = ['Michael', 'Steven', 'Peter'];
+// const friends = ['Michael', 'Steven', 'Peter'];
 
-// Add elements
-const newLength = friends.push('Jay'); // Push add element at the end
-console.log(friends);
-console.log(newLength); // Return the new length
+// // Add elements
+// const newLength = friends.push('Jay'); // Push add element at the end
+// console.log(friends);
+// console.log(newLength); // Return the new length
 
-friends.unshift('John'); // Add element at the begining
-console.log(friends);
+// friends.unshift('John'); // Add element at the begining
+// console.log(friends);
 
-// Remove elements
-friends.pop(); // Remove last
-console.log(friends);
+// // Remove elements
+// friends.pop(); // Remove last
+// console.log(friends);
 
-const popped = friends.pop();
-console.log(popped);// Return the element popped
-console.log(friends);
+// const popped = friends.pop();
+// console.log(popped);// Return the element popped
+// console.log(friends);
 
-friends.shift(); // Remove first
-console.log(friends);
+// friends.shift(); // Remove first
+// console.log(friends);
 
-// Returning the index of a element
+// // Returning the index of a element
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob')); // Returns -1 when the element does not exist
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob')); // Returns -1 when the element does not exist
 
-// Show if an element exists in the array
-console.log(friends.includes('Steven')); // Returns true
-console.log(friends.includes('Bob')); // Returns false
+// // Show if an element exists in the array
+// console.log(friends.includes('Steven')); // Returns true
+// console.log(friends.includes('Bob')); // Returns false
 
-friends.push(23);
-console.log(friends.includes('23')); // Returns false because there is no conversion
-console.log(friends);
+// friends.push(23);
+// console.log(friends.includes('23')); // Returns false because there is no conversion
+// console.log(friends);
 
-// Testing includes method
-friends.unshift('Peter');
-if (friends.includes('Peter')) {
-    console.log('You have a friend named Peter.')
-} else {
-    console.log("You don't have a friend named Peter")
-}
+// // Testing includes method
+// friends.unshift('Peter');
+// if (friends.includes('Peter')) {
+//     console.log('You have a friend named Peter.')
+// } else {
+//     console.log("You don't have a friend named Peter")
+// }
 
 
 // ############ 41. CODING CHALLENGE 02 ############
+
+// function calcTip(bill) {
+//     const tip = bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2;
+//     return tip;
+// }
+
+// const bills = [125, 555, 44];
+// const tips = [];
+
+// tips.push(calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]));
+// console.log(tips);
+
+// const total = [];
+// total.push(bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]);
+// console.log(total);
+
+// ########## 42. Introduction to Objects ##########
 
