@@ -348,3 +348,9 @@
 
 // ############ 46. Interation: The For Loop ############
 
+// for (let rep = 1; rep <=10; rep++) {
+//     console.log(`Lifting weights repetition ${rep} 🏋🏻‍♂️`);
+// };
+
+// ############ 47. Looping Arrays, Breaking and Continuing ############
+
