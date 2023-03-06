@@ -283,3 +283,35 @@
 
 // ############ 44. Objects Methods ############
 
+// const bruno = {
+//     firstName: 'Bruno',
+//     lastName: 'Domingues',
+//     birthYear: 1985,
+//     job: 'Developer',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriverLicense: false,
+//     calcAge: function () {
+//         this.age = 2023 - this.birthYear;
+//         return this.age;
+//     },
+
+//     // calcAge: function (birthYear) {
+//     //     return 2023 - birthYear;
+//     // }
+
+//     // calcAge: function () {
+//     //     return 2023 - this.birthYear;
+//     // }
+
+//     getSumary: function () {
+//         return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver license.`;
+//     }
+// };
+
+// console.log(bruno.getSumary());
+// console.log(bruno.calcAge());
+// console.log(bruno['calcAge']());
+// console.log(bruno.age);
+
+// ############ 45. CODING CHALLENGE 3 ############
+
