@@ -245,21 +245,41 @@
 
 // ########## 42. Introduction to Objects ##########
 
-const brunoArray = [
-    'Bruno',
-    'Domingues',
-    2023 - 1985,
-    'Developer',
-    ['Michael', 'Peter', 'Steven']
-];
+// const brunoArray = [
+//     'Bruno',
+//     'Domingues',
+//     2023 - 1985,
+//     'Developer',
+//     ['Michael', 'Peter', 'Steven']
+// ];
 
-const bruno = {
-    firstName: 'Bruno',
-    lastName: 'Domingues',
-    age: 2023 - 1985,
-    job: 'Developer',
-    friends: ['Michael', 'Peter', 'Steven']
-};
+// const bruno = {
+//     firstName: 'Bruno',
+//     lastName: 'Domingues',
+//     age: 2023 - 1985,
+//     job: 'Developer',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };
 
-// ############ 43. Dot Vs Bracket Notation
+// // ############ 43. Dot Vs Bracket Notation ############
+
+// console.log(bruno);
+
+// console.log(bruno.lastName);
+// console.log(bruno['lastName']);
+
+// const nameKey = 'Name';
+// console.log(bruno['first' + nameKey]);
+// console.log(bruno['last' + nameKey]);
+
+// // const interestedIn = prompt("What do you want to know about Bruno? Choose between firstNmae, lastName, age, job or friends:");
+// // console.log(bruno[interestedIn]);
+
+// bruno.location = "Brazil";
+// bruno.Instagram = '@brunomtheus';
+// console.log(bruno);
+
+// console.log(`${bruno.firstName} has ${bruno.friends.length} friends, and his best friend is ${bruno.friends[0]}.`);
+
+// ############ 44. Objects Methods ############
 
