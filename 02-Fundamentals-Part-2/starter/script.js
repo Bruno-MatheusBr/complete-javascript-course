@@ -245,3 +245,21 @@
 
 // ########## 42. Introduction to Objects ##########
 
+const brunoArray = [
+    'Bruno',
+    'Domingues',
+    2023 - 1985,
+    'Developer',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const bruno = {
+    firstName: 'Bruno',
+    lastName: 'Domingues',
+    age: 2023 - 1985,
+    job: 'Developer',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+// ############ 43. Dot Vs Bracket Notation
+
