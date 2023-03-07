@@ -399,3 +399,25 @@
 
 // ############ 48. Looping Backwards and Loops in Loops ############
 
+// const bruno = [
+//     'Bruno',
+//     'Domingues',
+//     2023 - 1985,
+//     'Developer',
+//     ['Michael', 'Peter', 'Steven'],
+//     true
+// ];
+
+// for (let i = bruno.length - 1; i >= 0; i--) {
+//     console.log(i, bruno[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`-------- Exercise ${exercise}:`);
+//     for (let rep = 1; rep < 7; rep++) {
+//         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋🏻‍♂️`);
+//     }
+// }
+
+// ############ 49. The While Loop ############
+
