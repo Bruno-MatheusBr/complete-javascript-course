@@ -1,6 +1,6 @@
 'use strict';
 
-// ##########
+// ########## 72. Selection and Manipulating Elements ##########
 console.log(document.querySelector('.message').textContent);
 document.querySelector('.message').textContent = '🎉 Correct Number!';
 console.log(document.querySelector('.message').textContent);
