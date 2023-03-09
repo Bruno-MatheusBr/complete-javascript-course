@@ -21,25 +21,29 @@ document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
 
+  // No number entered
   if (!guess) {
     document.querySelector('.message').textContent = '⛔ No number!';
+    // When player wins
   } else if (guess === secreteNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
+    // When player guess wrong
   } else if (score > 1) {
     if (guess < secreteNumber) {
-      document.querySelector('.message').textContent =
-        '⬆️ The number is higher!';
+      document.querySelector('.message').textContent = '⬇️ To low!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      document.querySelector('.message').textContent =
-        '⬇️ The number is lower!';
+      document.querySelector('.message').textContent = '⬆️ To high!';
       score--;
       document.querySelector('.score').textContent = score;
     }
+    // When player loose
   } else {
     if (score > 0) {
-      document.querySelector('.message').textContent = '💥 You lose';
+      document.querySelector('.message').textContent = '💥 You loose';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -47,17 +51,3 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
-
-// if (!guess) {
-//   document.querySelector('.message').textContent = '⛔ No number!';
-// } else if (guess === secreteNumber) {
-//   document.querySelector('.message').textContent = '🎉 Correct Number!';
-// } else if (guess < secreteNumber) {
-//   document.querySelector('.message').textContent = '⬆️ The number is higher!';
-//   score--;
-//   document.querySelector('.score').textContent = score;
-// } else {
-//   document.querySelector('.message').textContent = '⬇️ The number is lower!';
-//   score--;
-//   document.querySelector('.score').textContent = score;
-// };
