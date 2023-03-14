@@ -15,6 +15,8 @@ diceEl.classList.add('hidden');
 score0El.textContent = 0;
 score1El.textContent = 0;
 
+let current0 = 0;
+
 // Roling dice functionality
 btnRoll.addEventListener('click', function () {
     // 1. Generate the random dice number
@@ -25,5 +27,11 @@ btnRoll.addEventListener('click', function () {
     diceEl.src = `dice-${dice}.png`;
 
     // 3. Checking for rolls rules
-
+    if (dice !== 1) {
+        current0 += dice;
+        current0El.textContent = current0;
+    } else {
+        current0 = 0
+        current0El.textContent = current0;
+    }
 })
