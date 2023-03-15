@@ -20,6 +20,7 @@ score1El.textContent = 0;
 const scores = [0, 0]
 let currentScore = 0;
 let activePlayer = 0;
+let playing = true;
 
 const switchPlayer = function () {
     currentScore = 0;
@@ -30,35 +31,42 @@ const switchPlayer = function () {
 }
 
 // Roling dice functionality
+
 btnRoll.addEventListener('click', function () {
-    // 1. Generate the random dice number
-    const dice = Math.trunc(Math.random() * 6) + 1;
-    // 2. Display dice
-    diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`;
-    // 3. Checking for roll rules
-    if (dice !== 1) {
-        currentScore += dice;
-        document.getElementById(`current--${activePlayer}`).textContent = currentScore;
-    } else {
-        switchPlayer();
+    if (playing) {
+        // 1. Generate the random dice number
+        const dice = Math.trunc(Math.random() * 6) + 1;
+        // 2. Display dice
+        diceEl.classList.remove('hidden');
+        diceEl.src = `dice-${dice}.png`;
+        // 3. Checking for roll rules
+        if (dice !== 1) {
+            currentScore += dice;
+            document.getElementById(`current--${activePlayer}`).textContent = currentScore;
+        } else {
+            switchPlayer();
+        }
     }
 });
 
+
+
+
+
 // Holding score
 btnHold.addEventListener('click', function () {
-    //Transfering the "current score" to "score"
-    scores[activePlayer] += currentScore;
-    document.querySelector(`#score--${activePlayer}`).textContent = scores[activePlayer];
-
-    if (scores[activePlayer] >= 20) {
-        document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
-        document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
-        diceEl.classList.add('hidden');
-        btnRoll.classList.add('hidden');
-        btnHold.classList.add('hidden');
-    } else {
-        switchPlayer();
+    if (playing) {
+        //Transferring the "current score" to "score"
+        scores[activePlayer] += currentScore;
+        document.querySelector(`#score--${activePlayer}`).textContent = scores[activePlayer];
+        // Checking if there is a winner
+        if (scores[activePlayer] >= 20) {
+            playing = false;
+            document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
+            document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
+            diceEl.classList.add('hidden');
+        } else {
+            switchPlayer();
+        }
     }
-
 });
