@@ -67,31 +67,27 @@ btnHold.addEventListener('click', function () {
     }
 });
 
+const resetGame = function () {
+    player0El.classList.add('player--active');
+    current0El.textContent = 0;
+    current1El.textContent = 0;
+    score0El.textContent = 0;
+    score1El.textContent = 0;
+    currentScore = 0;
+    scores[0] = 0;
+    scores[1] = 0;
+    playing = true;
+}
+
 // Reseting the game
 btnNew.addEventListener('click', function () {
     if (player0El.classList.contains('player--winner')) {
-        document.querySelector('.player--0').classList.remove('player--winner');
-        document.querySelector('.player--0').classList.add('player--active');
-        current0El.textContent = 0;
-        current1El.textContent = 0;
-        score0El.textContent = 0;
-        score1El.textContent = 0;
-        currentScore = 0;
-        scores[0] = 0;
-        scores[1] = 0;
-        playing = true;
+        player0El.classList.remove('player--winner');
+        resetGame();
     } else {
         player1El.classList.remove('player--winner');
         player1El.classList.remove('player--active');
-        player0El.classList.add('player--active');
         activePlayer = 0;
-        current0El.textContent = 0;
-        current1El.textContent = 0;
-        score0El.textContent = 0;
-        score1El.textContent = 0;
-        currentScore = 0;
-        scores[0] = 0;
-        scores[1] = 0;
-        playing = true;
+        resetGame();
     }
 });
