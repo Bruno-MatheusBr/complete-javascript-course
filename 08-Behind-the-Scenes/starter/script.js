@@ -85,18 +85,48 @@
 // };
 // calcAgeArrow(1980);
 
-const jonas = {
-    year: 1991,
-    calcAge: function () {
-        console.log(this);
-        console.log(2037 - this.year);
-    }
-}
-jonas.calcAge();
+// const jonas = {
+//     year: 1991,
+//     calcAge: function () {
+//         console.log(this);
+//         console.log(2037 - this.year);
+//     }
+// }
+// jonas.calcAge();
 
-const matilda = {
-    year: 2017,
-};
+// const matilda = {
+//     year: 2017,
+// };
 
-matilda.calcAge = jonas.calcAge;
-matilda.calcAge();
+// matilda.calcAge = jonas.calcAge;
+// matilda.calcAge();
+
+// var firstName = 'Matilda';
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     year: 1991,
+//     calcAge: function () {
+//         // console.log(this);
+//         // console.log(2037 - this.year);
+
+//         const isMillenial = () => {
+//             // console.log(this.year >= 1981 && this.year <= 1996);
+//             console.log(this);
+//         }
+//         isMillenial()
+//     },
+
+
+//     // greet: () => console.log(`Hey ${this.firstName}`),
+
+// };
+
+// // jonas.greet();
+// jonas.calcAge();
+
+// const addExpr = function (a, b) {
+//     return a + b;
+// }
+
+// console.log(addExpr(2, 5, 6, 8));
