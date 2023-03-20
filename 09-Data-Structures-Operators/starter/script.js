@@ -33,15 +33,60 @@ const restaurant = {
   orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
     console.log(`Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delievered to ${address} at ${time}.`);
 
-  }
+  },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`);
+  },
 };
 
-restaurant.orderDelivery({
-  time: '22:30',
-  address: 'Via del Sole, 21',
-  mainIndex: 2,
-  starterIndex: 2,
-})
+// ############ 105. The Spread Operator (...) ############
+
+// Objects
+const newRestaurant = { foudedIn: 1998, ...restaurant, founder: 'Giuseppe' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Ristorante Roma';
+console.log(restaurant.name);
+console.log(restaurantCopy.name);
+
+// Real world exemple
+// const ingredients = [prompt("Ing 1"), prompt('Ing 2'), prompt('Ing 3')];
+// restaurant.orderPasta(...ingredients);
+
+// const novaArray = ['a', 'b', 'c'];
+// console.log(...novaArray);
+
+
+// const arr = [7, 8, 9];
+
+// const newArr = [1, 2, ...arr]
+// console.log(newArr);
+
+// console.log(...newArr);
+
+// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
+
+// // Copy array
+// const mainMenuCopy = [...restaurant.mainMenu];
+
+// // Join 2 arrays
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+// console.log(menu);
+
+// // Iterables: arrays, strings, maps, sets. But not objects
+// const str = 'Jonas';
+// const letters = [...str, 'S.'];
+// console.log(letters);
+
+// restaurant.orderDelivery({
+//   time: '22:30',
+//   address: 'Via del Sole, 21',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// })
 
 // const { name, openingHours, categories } = restaurant;
 // console.log(openingHours);
