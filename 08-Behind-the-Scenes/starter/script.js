@@ -130,3 +130,45 @@
 // }
 
 // console.log(addExpr(2, 5, 6, 8));
+
+// Primitive types
+// let lastName = 'Williams';
+// let oldLastName = lastName;
+// lastName = 'Davis';
+
+// console.log(lastName);
+// console.log(oldLastName);
+
+// // Reference types
+// const jessica = {
+//     firstName: 'Jessica',
+//     lastName: 'Williams',
+//     age: 27,
+// }
+
+// const marriedJessica = jessica;
+
+// marriedJessica.lastName = 'Davis';
+
+// console.log(jessica);
+// console.log(marriedJessica);
+
+// Copying types
+// const jessica = {
+//     firstName: 'Jessica',
+//     lastName: 'Williams',
+//     age: 27,
+//     family: ['Alice', 'Bob'],
+// }
+
+// const jessicaCopy = Object.assign({}, jessica);
+
+// jessicaCopy.lastName = 'Davis';
+
+// jessicaCopy.family.push('Mary');
+// jessicaCopy.family.push('John');
+
+// console.log(jessica);
+// console.log(jessicaCopy);
+
+// THE END //
