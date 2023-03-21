@@ -44,19 +44,26 @@ const restaurant = {
   }
 };
 
+
+
+
 //  ///////////////// OR /////////////////
 // console.log(undefined || 3);
 
-// restaurant.numGuest = 23;
-// const guest1 = restaurant.numGuest ? restaurant.numGuest : 10;
-// console.log(guest1);
+// restaurant.numGuest = 0;
+// // const guest1 = restaurant.numGuest ? restaurant.numGuest : 10;
+// // console.log(guest1);
 
 // const guest2 = restaurant.numGuest || 10;
 // console.log(guest2);
 
+// // Nullish: null and undefined (NOT 0 or '')
+// const guestCorrect = restaurant.numGuest ?? 10;
+// console.log(guestCorrect);
+
 //  ///////////////// --- AND --- ////////////////
 
-console.log('Hello' && 23 && undefined && 'Jonas');
+// console.log('Hello' && 23 && undefined && 'Jonas');
 
 // ///////////////////
 
