@@ -44,8 +44,24 @@ const restaurant = {
   }
 };
 
-restaurant.orderPizza('cheese', 'chicken', 'onions', 'catupiry');
-restaurant.orderPizza('cheese')
+//  ///////////////// OR /////////////////
+// console.log(undefined || 3);
+
+// restaurant.numGuest = 23;
+// const guest1 = restaurant.numGuest ? restaurant.numGuest : 10;
+// console.log(guest1);
+
+// const guest2 = restaurant.numGuest || 10;
+// console.log(guest2);
+
+//  ///////////////// --- AND --- ////////////////
+
+console.log('Hello' && 23 && undefined && 'Jonas');
+
+// ///////////////////
+
+// restaurant.orderPizza('cheese', 'chicken', 'onions', 'catupiry');
+// restaurant.orderPizza('cheese')
 
 // 1) Destructuring
 // const arr = [1, 2, ...[3, 4]];
