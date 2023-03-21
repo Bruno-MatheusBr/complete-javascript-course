@@ -37,18 +37,63 @@ const restaurant = {
   orderPasta: function (ing1, ing2, ing3) {
     console.log(`Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`);
   },
+
+  orderPizza: function (mainIngredient, ...othersIngredients) {
+    console.log(mainIngredient);
+    console.log(othersIngredients);
+  }
 };
+
+restaurant.orderPizza('cheese', 'chicken', 'onions', 'catupiry');
+restaurant.orderPizza('cheese')
+
+// 1) Destructuring
+// const arr = [1, 2, ...[3, 4]];
+// const [a, b, ...others] = [1, 2, 3, 4, 5];
+
+// // console.log(arr);
+// // console.log(others);
+// // console.log(a);
+// // console.log(b);
+
+// const [pizza, , risoto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(otherFood);
+// console.log(risoto, pizza);
+
+// // Objects
+// const { sat, ...weekDays } = { ...restaurant.openingHours };
+// console.log(weekDays);
+// console.log(sat);
+
+// // 2) Functions
+// const add = function (...numbers) {
+//   // console.log(numbers);
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+//   }
+//   console.log(sum);
+
+// };
+
+// add(2, 3);
+// add(5, 3, 7, 2);
+// add(8, 2, 5, 3, 2, 1, 4);
+
+// const x = [23, 5, 7];
+// add(...x);
+
 
 // ############ 105. The Spread Operator (...) ############
 
 // Objects
-const newRestaurant = { foudedIn: 1998, ...restaurant, founder: 'Giuseppe' };
-console.log(newRestaurant);
+// const newRestaurant = { foudedIn: 1998, ...restaurant, founder: 'Giuseppe' };
+// console.log(newRestaurant);
 
-const restaurantCopy = { ...restaurant };
-restaurantCopy.name = 'Ristorante Roma';
-console.log(restaurant.name);
-console.log(restaurantCopy.name);
+// const restaurantCopy = { ...restaurant };
+// restaurantCopy.name = 'Ristorante Roma';
+// console.log(restaurant.name);
+// console.log(restaurantCopy.name);
 
 // Real world exemple
 // const ingredients = [prompt("Ing 1"), prompt('Ing 2'), prompt('Ing 3')];
