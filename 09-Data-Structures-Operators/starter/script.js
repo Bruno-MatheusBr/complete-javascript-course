@@ -34,8 +34,60 @@ const restaurant = {
   orderDelivery: function ({ address, time, starterIndex, mainIndex }) {
     console.log(`Order: ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]}. Address ${address} at ${time}.`);
   },
+  // Using Spread Operator in Real World Exemple
+  orderPasta: function ([ing1, ing2, ing3]) {
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`);
+  },
+
 };
 
+
+
+/*
+// /////////////// 105. THE SPREAD OPERATOR ///////////////
+
+// The Spread Operator works with all iterables. (iterables = arrays, strings, maps, sets. NOT objects)
+console.log('|====== Real World Exemple Using Spread Operator ======|');
+
+// const ingredients = [prompt('ingredient 1'), prompt('ingredient 2'), prompt('ingredient 3')];
+// console.log(ingredients); // Just to remember that the prompts will be stored in an array
+
+// restaurant.orderPasta([...ingredients]); // The magic happens here
+
+console.log('|====== Spread Operator with Objects ======|');
+
+const newRestaurant = { foundedIn: 1998, ...restaurant, founder: 'Giuseppe' }; // Copying and adding new elements at the same time
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant }; // Just making a copy
+console.log(restaurantCopy);
+restaurantCopy.name = "Ristorante Rome"; // Making changes in restaurantCopy
+console.log(restaurant.name, restaurantCopy.name);
+
+console.log('|====== Changing the Letters of a String into an Array');
+const str = 'Jonas';
+const letters = [...str];
+console.log(letters);
+
+console.log('|====== Merging Two Arrays Using Spread Operator ======|');
+const arr = [7, 8, 9];
+const newArray = [1, 2, ...arr];
+console.log(newArray);  // Will return an Array
+console.log(...newArray); // Will return the elements individually
+// Second possibility
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+console.log('|====== Adding Elements in an Array inside an Object ======|');
+// That will not affect the original object.
+const newMenu = [...restaurant.mainMenu, 'Gnocchi'];
+console.log(newMenu);
+
+console.log('|====== Copying an Array ======|');
+const mainMenuCopy = [...restaurant.mainMenu];
+console.log(mainMenuCopy);
+// /////////////// END OF THE CLASS 105. THE SPREAD OPERATOR ///////////////
+*/
 
 /*
 // /////////////// 104. DESTRUCTURING OBJECTS ///////////////
@@ -84,9 +136,9 @@ console.log(o, c);
 // /////////////// END OF THE CLASS 104. DESTRUCTURING OBJECTS ///////////////
 */
 
-
 /*
 // /////////// 103. DESTRUCTURING ARRAYS (AND OBJECTS AND FUNCTIONS) /////////////
+
 console.log('------ Destructuring From Functions ------');
 const [pratoDeEntrada, pratoPrincipal] = restaurant.order(0, 2);  // Just calling the function, it would return an Array with the two elements
 console.log(pratoDeEntrada, pratoPrincipal);  // Using the Destructuring Assignment it returns the elements in separate variables
