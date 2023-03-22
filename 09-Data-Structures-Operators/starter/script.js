@@ -26,11 +26,65 @@ const restaurant = {
       close: 24,
     },
   },
-
+  // Destructuring Arrays Real Wolrd Exemples
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]
-  }
+  },
+  // Destructuring Objects Real World Exemple
+  orderDelivery: function ({ address, time, starterIndex, mainIndex }) {
+    console.log(`Order: ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]}. Address ${address} at ${time}.`);
+  },
 };
+
+
+/*
+// /////////////// 104. DESTRUCTURING OBJECTS ///////////////
+console.log('|------ Real World Exemple ------|');
+
+restaurant.orderDelivery({
+  time: '20:30',
+  address: 'Via del Sole, 21',
+  starterIndex: 1,
+  mainIndex: 2,
+});
+
+console.log('|------ Destructuring Objects ------|');
+
+console.log('*** Keeping the original names of the properties ***');
+const { name, categories, openingHours } = restaurant;  // Will return variables with their original values (str, arrays, objects, etc...)
+console.log(categories, name, openingHours);
+
+console.log('*** Changing the original names of the properties ***');
+const { name: restaurantName, openingHours: opening, categories: tags } = restaurant;
+console.log(tags, restaurantName, opening);
+
+console.log('|------ Setting Default Values ------|');
+// When some element is not in an object, it will return 'undefined'
+// Setting defaults values avoid that
+const { country = [], name: newName = [], starterMenu = [] } = restaurant;  // Was assigned a new name to avoid conflit with the variable "name" above
+console.log(newName, starterMenu);  // Country will not return 'undefined'
+
+console.log('|------ Mutating Variables While Desxtructuring objects ------|');
+
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+
+// Making the Destructuring
+({ a, b } = obj);  // It has to use parenthesis to make it to work
+console.log(a, b); // Now a=23 and b=7
+
+console.log('|------ Nested Objects ------|');
+
+const { fri: { open, close } } = openingHours;  // Using original names as variables
+console.log(open, close);
+
+const { fri: { open: o, close: c } } = openingHours;  // Assigning new names as variables
+console.log(o, c);
+// /////////////// END OF THE CLASS 104. DESTRUCTURING OBJECTS ///////////////
+*/
+
+
 /*
 // /////////// 103. DESTRUCTURING ARRAYS (AND OBJECTS AND FUNCTIONS) /////////////
 console.log('------ Destructuring From Functions ------');
@@ -52,7 +106,7 @@ console.log(a, b, c);
 console.log(x, y, z);
 console.log(arr);  // Despite the array was destructured, it was not affected
 
-console.log('------ Destructuring Objects ------');
+console.log('------ Destructuring Arrays in Objects ------');
 const [first, second] = restaurant.categories;
 console.log(second, first);
 
