@@ -38,11 +38,48 @@ const restaurant = {
   orderPasta: function ([ing1, ing2, ing3]) {
     console.log(`Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`);
   },
-
+  orderPizza: function (mainIng, ...otherIng) {
+    console.log(mainIng);
+    console.log(otherIng);
+  },
 };
 
+restaurant.orderPizza("frango", "azeitona", "bacon");
+restaurant.orderPizza("Presunto");
+
+// DESTRUCTURING
+// SPREAD, because on RIGHT fide of =
+const arr = [1, 2, ...[3, 4]];
+
+// REST, because on LEFT side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
 console.log(others);
+
+const [pizza, , ...otherFoods] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(otherFoods);
+
+console.log('|====== Rest Pattern With Objects ======|');
+
+const { sat, ...weekDays } = restaurant.openingHours;
+console.log(weekDays);
+
+// FUNCTION
+
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  console.log(sum);
+};
+
+add(2, 3, 4);
+add(5, 6, 7);
+add(3, 4, 5, 6, 7);
+
+const x = [23, 5, 7];
+add(...x);
+
 
 /*
 // /////////////// 105. THE SPREAD OPERATOR ///////////////
