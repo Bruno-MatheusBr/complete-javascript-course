@@ -44,7 +44,7 @@ const restaurant = {
   },
 };
 
-restaurant.orderPizza("frango", "azeitona", "bacon");
+restaurant.orderPizza("frango", "azeitona", "bacon", 'Creme de Leite');
 restaurant.orderPizza("Presunto");
 
 // DESTRUCTURING
