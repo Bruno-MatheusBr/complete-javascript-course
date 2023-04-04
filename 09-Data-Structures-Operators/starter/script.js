@@ -43,12 +43,19 @@ const restaurant = {
     console.log(otherIng);
   },
 };
-
+/*
 // /////////////// 108. THE NULISH COALESCING OPERATOR (??) ///////////////
 
+// Do not work in this exemple because work with falsy values and 0 is a falsy one
+restaurant.numGeusts = 0;
+const guests = restaurant.numGeusts || 10;  // It won't work properlly because it will 0 is a valid number
+console.log(guests);
 
-
-
+// It works because Nullish works only with null and undefined
+const correctGuests = restaurant.numGeusts ?? 10;
+console.log(correctGuests);
+// /////////////// END OF TH CLASS 108. THE NULISH COALESCING OPERATOR (??) ///////////////
+*/
 
 
 /*
@@ -126,6 +133,7 @@ add(...x);
 // /////////////// AND OF THE CLASS 106. REST PATTERNS AND PARAMETERS ///////////////
 */
 
+
 /*
 // /////////////// 105. THE SPREAD OPERATOR ///////////////
 
@@ -171,6 +179,7 @@ const mainMenuCopy = [...restaurant.mainMenu];
 console.log(mainMenuCopy);
 // /////////////// END OF THE CLASS 105. THE SPREAD OPERATOR ///////////////
 */
+
 
 /*
 // /////////////// 104. DESTRUCTURING OBJECTS ///////////////
@@ -218,6 +227,7 @@ const { fri: { open: o, close: c } } = openingHours;  // Assigning new names as 
 console.log(o, c);
 // /////////////// END OF THE CLASS 104. DESTRUCTURING OBJECTS ///////////////
 */
+
 
 /*
 // /////////// 103. DESTRUCTURING ARRAYS (AND OBJECTS AND FUNCTIONS) /////////////
