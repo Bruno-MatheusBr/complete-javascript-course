@@ -44,6 +44,36 @@ const restaurant = {
   },
 };
 /*
+// /////////////// 109. LOGICAL ASSIGNMENT OPERATORS ///////////////
+
+const rest1 = {
+  name: 'Capri',
+  numGuests: 0,
+};
+
+const rest2 = {
+  name: 'La Piazza',
+  owner: 'Giovanni Rossi',
+};
+
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+// Setting owner as anonymous
+rest1.owner &&= '<Anonymous>'; // It will display nothing because there is no owner object
+rest2.owner &&= '<Anonymous>';
+
+console.log(rest1);
+console.log(rest2);
+
+// /////////////// END OF THE CLASS 109. LOGICAL ASSIGNMENT OPERATORS ///////////////
+*/
+
+
+/*
 // /////////////// 108. THE NULISH COALESCING OPERATOR (??) ///////////////
 
 // Do not work in this exemple because work with falsy values and 0 is a falsy one
