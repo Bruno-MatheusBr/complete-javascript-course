@@ -44,6 +44,50 @@ const restaurant = {
   },
 };
 
+// /////////////// 108. THE NULISH COALESCING OPERATOR (??) ///////////////
+
+
+
+
+
+
+/*
+// //////////// 107. SHORT CIRCUITING (&& and ||) ////////////
+// Use ANY data type, return ANY data type, short-circuiting
+
+console.log('|------ OR Short Cicuit ------|');
+console.log(3 || 'Jonas');
+console.log('' || 'Jonas');
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+
+// Pratical exemple
+
+// restaurant.numGuests = 23;
+const guests = restaurant.numGuests || 10;  // numGuests do not exist originally
+console.log(guests);
+
+console.log('|------ AND Short Cicuit ------|');
+// Show the first falsy value.
+// If all values are true, than it is shown the last value
+console.log(0 && 'Jonas');
+console.log(23 && 'Jonas');
+console.log(0 && undefined);
+// Pratical exemple
+// if way
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('Presunto', 'Bacon');
+};
+// short-cutting way
+restaurant.orderPizza && restaurant.orderPizza('Presunto', 'Bacon');
+// //////////// AND OF THE CLASS 107. SHORT CIRCUITING (&& and ||) ////////////
+*/
+
+
+/*
+// /////////////// 106. REST PATTERNS AND PARAMETERS ///////////////
 restaurant.orderPizza("frango", "azeitona", "bacon", 'Creme de Leite');
 restaurant.orderPizza("Presunto");
 
@@ -79,7 +123,8 @@ add(3, 4, 5, 6, 7);
 
 const x = [23, 5, 7];
 add(...x);
-
+// /////////////// AND OF THE CLASS 106. REST PATTERNS AND PARAMETERS ///////////////
+*/
 
 /*
 // /////////////// 105. THE SPREAD OPERATOR ///////////////
