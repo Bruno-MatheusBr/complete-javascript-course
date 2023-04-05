@@ -43,6 +43,33 @@ const restaurant = {
     console.log(otherIng);
   },
 };
+// /////////////// 112. Enhanced Object Literals ///////////////
+
+
+/*
+// /////////////// 111. lOOPING ARRAYS: THE FOR-OF LOOP ///////////////
+// const array1 = ['a', 'b', 'c'];
+
+// for (const element of array1) {
+//   console.log(element);
+// }
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu) {
+  console.log(item);
+};
+
+for (const item of menu.entries()) {
+  console.log(`${item[0] + 1} - ${item[1]}`); // Old school
+}
+for (const [index, element] of menu.entries()) {
+  console.log(`${index + 1} = ${element}.`); // New way
+};
+
+// /////////////// END OF THE CLASS 111. lOOPING ARRAYS: THE FOR-OF LOOP ///////////////
+*/
+
 
 /*
 // /////////////// 110. CODING CHALLLENGE 01 ///////////////
